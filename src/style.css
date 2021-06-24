@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #44639F;
+}
+/* texto animação*/
+h1 {
+    padding-top: 90px;
+    text-align: center;
+}
+/* cor, tamanho da barra*/
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 12.7%;
+    overflow: hidden;
+    background-color: #b1c5ed;
+}
+/*posição do logo ghibli*/
+nav ul {
+    position: relative;
+    display: flex;
+    top: -18px;
+}
+/*tirar a bolinha de link */
+nav ul li {
+    display: inline-block;
+    font-size: 18px;
+}
+/* tamanho e cor da barra */
+nav ul li a {
+    color: #f2f2f2;
+    padding: 30px 30px;
+    text-decoration: none;
+    float:left;
+}
+/* mudança de cor ao encostar */
+nav ul li a:hover {
+    background-color: #97b4ee;
+    color: #f2f2f2;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+/* caixas com as animações*/
+.conteiner1 {
+    height: 350px;
+    left: 3px;
+    top: 260px;
+    background: #AE4747;
+    box-sizing: border-box;
+}
+.conteiner2 {
+    height: 350px;
+    left: 3px;
+    top: 260px;
+    background: #EDD65E;
+    box-sizing: border-box;
+}
+.conteiner3 {
+    height: 350px;
+    left: 3px;
+    top: 260px;
+    background: #2E8C64;
+    box-sizing: border-box;
+}
+.conteiner4 {
+    height: 350px;
+    left: 3px;
+    top: 260px;
+    background: #F17B55;
+    box-sizing: border-box;
+}
+.conteiner5 {
+    height: 350px;
+    left: 3px;
+    top: 260px;
+    background: #AE4747;
+    box-sizing: border-box;
+}
+.conteiner6 {
+    height: 350px;
+    left: 3px;
+    top: 260px;
+    background: #EDD65E;
+    box-sizing: border-box;
+}
+.conteiner7 {
+    height: 350px;
+    left: 3px;
+    top: 260px;
+    background: #2E8C64;
+    box-sizing: border-box;
+}
+.conteiner8 {
+    height: 350px;
+    left: 3px;
+    top: 260px;
+    background: #F17B55;
+    box-sizing: border-box;
+}
+.totoro img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+footer {
+    text-align: center;
+}
+/* caixas de animação
+.conteiner1 #animacao1 #animacao2 #animacao3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}*/
