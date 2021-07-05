@@ -1,9 +1,7 @@
-// estas funciones son de ejemplo
+import data from "./data/ghibli/ghibli.json";
+export const films = data.films;
+//export const imgFilm = films[0].poster;
 
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
+export const filterAni = () =>  {
   return 'OMG';
 };
