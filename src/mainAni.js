@@ -8,7 +8,7 @@ let ordefilt = films;
 
 function infoAnimaTela (films) {
     document.getElementById("infoAnimacoes").innerHTML = films.map((film) => `
-        <a class="cards" id="cards" href="./infoAni?info=${film.id}" target="_blank">
+        <a class="cards" id="cards" href="./infoAni.html?info=${film.id}" target="_blank">
         <div class="imageFilm">
             <img src=${film.poster} class="cardImg" alt="Imagem da Animação">
             <div class="cardBack">
