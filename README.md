@@ -14,8 +14,11 @@ interagir e ver as informações das animações e seus personagens.
 
 # ÍNDICE
 [1. CONTRIBUIÇÕES](#1-contribuicoes)
+
 [2. USUÁRIOS](#2-usuarios)
+
 [3. PROTÓTIPO](#3-prototipo)
+
 [4. OBJETIVOS DE APRENDIZAGEM](#4-objetivos-de-aprendizagem)
 
 # 1. CONTRIBUIÇÕES
