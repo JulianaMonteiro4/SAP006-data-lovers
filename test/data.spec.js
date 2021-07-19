@@ -12,11 +12,6 @@ const aniTest = [
     "producer": "Hayao Miyazaki",
   },
   {
-    "title": "Kiki's Delivery Service",
-    "director": "Hayao Miyazaki",
-    "producer": "Hayao Miyazaki",
-  },
-  {
     "title": "Grave of the Fireflies",
     "director": "Isao Takahata",
     "producer": "Toru Hara",
@@ -83,7 +78,7 @@ const aniTest = [
   }
 ]
 
-const [Castle, My, Kiki, Grave, Only, Porco, Pom, Whisper, Princess, Spirited, The, Howl, Tales, Ponyo, From, When] = aniTest;
+const [Castle, My, Grave, Only, Porco, Pom, Whisper, Princess, Spirited, The, Howl, Tales, Ponyo, From, When] = aniTest;
 
 describe('filter function director', () => {
   it('is a function', () => {
@@ -91,7 +86,7 @@ describe('filter function director', () => {
   });
 
   it('returns director Hayao Miyazaki', () => {
-    expect(filterAni(aniTest, "director", "Hayao Miyazaki")).toEqual([Castle, My, Kiki, Porco, Princess, Spirited, Howl, Ponyo]);
+    expect(filterAni(aniTest, "director", "Hayao Miyazaki")).toEqual([Castle, My, Porco, Princess, Spirited, Howl, Ponyo]);
   });
 
   it('returns director Isao Takahata', () => {
@@ -119,11 +114,11 @@ describe('order function', () => {
   });
 
   it('returns title A-Z', () => {
-    expect(orderAni(aniTest, "A-Z")).toEqual([Castle, From, Grave, Howl, Kiki, My, Only, Pom, Ponyo, Porco, Princess, Spirited, Tales, The, When, Whisper]);
+    expect(orderAni(aniTest, "A-Z")).toEqual([Castle, From, Grave, Howl, My, Only, Pom, Ponyo, Porco, Princess, Spirited, Tales, The, When, Whisper]);
   });
 
   it('returns title Z-A', () => {
-    expect(orderAni(aniTest, "Z-A")).toEqual([Whisper, When, The, Tales, Spirited, Princess, Porco, Ponyo, Pom, Only, My, Kiki, Howl, Grave, From,Castle
+    expect(orderAni(aniTest, "Z-A")).toEqual([Whisper, When, The, Tales, Spirited, Princess, Porco, Ponyo, Pom, Only, My, Howl, Grave, From,Castle
     ]);
   });
 });

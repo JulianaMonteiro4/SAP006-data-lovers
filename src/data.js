@@ -1,6 +1,3 @@
-import data from "./data/ghibli/ghibli.js";
-export const films = data.films;
-
 export const filterAni = (arr, key, value) => 
     arr.filter((item) => item[key] === value);
 
