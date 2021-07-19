@@ -10,13 +10,13 @@ várias nomeações e prêmios. De todo esse fandom há um grupo que deseja
 interagir e ver as informações das animações e seus personagens.
 
 ## ACESSO
-[Site- projeto final](link do deploy)
+[Projeto final - Site](link do deploy)
 
 # ÍNDICE
-1. [CONTRIBUIÇÕES](#contribuiçoes)
-2. [USUÁRIOS](#usuarios)
-3. [PROTÓTIPO](#prototipo)
-4. [OBJETIVOS DE APRENDIZAGEM](#objetivos-de-aprendizagem)
+[1. CONTRIBUIÇÕES](#1-contribuicoes)
+[2. USUÁRIOS](#2-usuarios)
+[3. PROTÓTIPO](#3-prototipo)
+[4. OBJETIVOS DE APRENDIZAGEM](#4-objetivos-de-aprendizagem)
 
 # 1. CONTRIBUIÇÕES
 O projeto foi criado por Juliana Monteiro e Mariana Marcondes. 
