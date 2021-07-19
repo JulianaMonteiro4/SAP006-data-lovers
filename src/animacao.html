@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Studio Ghibli Collection - Animações </title>
+    <link rel="stylesheet" href="animacoes.css" />
+  </head>
+  <body>
+    <!-- Barra de Navegação -->
+    <nav id="nav">
+      <ul>
+        <div class="barraNav" id="barraNav">
+        <li><a href="//studioghibli.com.br/" target="_blank" ><img class="imageIcon" src="img/link-ghibli.png" alt="Studio Ghibli - link"></a></li>
+        <li><a class="barra1" href="./index.html">HOME</a></li>
+        <li><a class="barra2" href="./animacao.html">ANIMAÇÕES</a></li>
+        <li><a class="barra3" href="./characters.html">PERSONAGENS</a></li>
+        </div>
+        <!--<li><div class="barraMenu">
+          <div></div>
+          <div></div>
+          <div></div>
+          </div>
+        </li>-->
+      </ul>
+    </nav>
+    <header>
+    <h1>Animações</h1>
+    <!-- caixa de ordenar -->
+    <section class="selections">
+      <div class="order">
+        <img src="img/order-icon.svg" alt="Order">
+        <select name="select" id="order">
+          <option value="sorter" selected>Ordenar</option>
+          <option value="A-Z">A-Z</option>
+          <option value="Z-A">Z-A</option>
+          <!--<option value="release_date">Ano de Lançamento (crescente)</option>-->
+        </select>
+      </div>
+    <!-- caixa de  filtros -->
+    <div class="filter">
+      <img src="img/icon-filter.svg" alt="filter">
+      <select name="select" id="filter">
+        <option value="Filters" selected>Filtros</option>
+        <option value="director:Hayao Miyazaki">Diretor: Hayao Miyazaki</option>
+        <option value="director:Isao Takahata">Diretor: Isao Takahata</option>
+        <option value="director:Yoshifumi Kondō">Diretor: Yoshifumi Kondō</option>
+        <option value="director:Hiroyuki Morita">Diretor: Hiroyuki Morita</option>
+        <option value="director:Gorō Miyazaki">Diretor: Gorō Miyazaki</option>
+        <option value="director:Hiromasa Yonebayashi">Diretor: Hiromasa Yonebayashi</option>
+        <option value="producer:Isao Takahata">Produtor: Isao Takahata</option>
+        <option value="producer:Toru Hara">Produtor: Toru Hara</option>
+        <option value="producer:Toshio Suzuki">Produtor:Toshio Suzuki</option>
+        <option value="producer:Yoshiaki Nishimura">Produtor: Yoshiaki Nishimura</option>
+        <option value="producer:Hayao Miyazaki">Produtor: Hayao Miyazaki</option>
+      </select>
+    </div>
+    </section>
+    </header>
+    <!-- Caixa com as animações -->
+    <main>
+      <section>
+        <div id="infoAnimacoes"></div>
+      </section>
+    </main>
+    <footer>
+      <img class="totoroA" src="img/totoro.png">
+      <p>Feito por Juliana Monteiro e Mariana Marcondes</p>
+    </footer>
+    <div id="root"></div>
+    <script src="mainAni.js" type="module"></script>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-import {filtered, ordered, filterAni, orderAni} from "../src/data.js" 
+import {filtered, ordered, orderAni} from "../src/data.js" 
 // import {sumTotalChars, calcGender} from "../src/sum.js"
 // sumTotalMovies
 const charsTest = [
@@ -208,16 +208,13 @@ describe('ordered function chars', () => {
 });
 
 describe('filter function director', () => {
-  it('is a function', () => {
-    expect(typeof filterAni).toBe('function');
-  });
-
+ 
   it('returns director Hayao Miyazaki', () => {
-    expect(filterAni(aniTest, "director", "Hayao Miyazaki")).toEqual([Castle, My, Porco, Princess, Spirited, Howl, Ponyo]);
+    expect(filtered(aniTest, "director", "Hayao Miyazaki")).toEqual([Castle, My, Porco, Princess, Spirited, Howl, Ponyo]);
   });
 
   it('returns director Isao Takahata', () => {
-    expect(filterAni(aniTest, "director", "Isao Takahata")).toEqual([Grave, Only, Pom])
+    expect(filtered(aniTest, "director", "Isao Takahata")).toEqual([Grave, Only, Pom])
   })
 });
 
@@ -227,11 +224,11 @@ describe('filter function producer', () => {
   });
 
   it('returns producer Toshio Suzuki', () => {
-    expect(filterAni(aniTest, "producer", "Toshio Suzuki")).toEqual([Only, Porco, Pom, Whisper, Princess, Spirited, The, Howl, Tales, Ponyo, From]);
+    expect(filtered(aniTest, "producer", "Toshio Suzuki")).toEqual([Only, Porco, Pom, Whisper, Princess, Spirited, The, Howl, Tales, Ponyo, From]);
   });
 
   it('returns producer Yoshiaki Nishimura', () => {
-    expect(filterAni(aniTest, "producer", "Yoshiaki Nishimura")).toEqual([When]);
+    expect(filtered(aniTest, "producer", "Yoshiaki Nishimura")).toEqual([When]);
   });
 });
 

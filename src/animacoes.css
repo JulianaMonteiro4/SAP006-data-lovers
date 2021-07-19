@@ -1,0 +1,163 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #44639F;
+    font-family: 'Raleway', sans-serif;
+}
+/* texto animação*/
+h1 {
+    padding-top: 140px;
+    text-align: center;
+}
+/* tanho e local do filtro */
+.selections {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    position: relative;
+    bottom: 10px;
+}
+.selections img {
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+.selections select {
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    text-align-last: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.filter{
+    display: flex;
+}
+.order{
+    display: flex;
+  }
+/* cor, tamanho da barra*/
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-flow: row wrap;
+    top: 0;
+    overflow: hidden;
+    background-color: #b1c5ed;
+    z-index: 1000;
+}
+/*posição do logo ghibli*/
+nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    font-size: 18px;
+}
+/* tamanho e cor da barra */
+nav ul li a {
+    width: 100%;
+    color: #000;
+    padding: 58px 30px;
+    text-decoration: none;
+}
+/* mudança de cor ao encostar */
+nav ul li a:hover {
+    background-color: #97b4ee;
+    color: #f2f2f2;
+    box-shadow: inset 3px 2px 3px rgb(139, 171, 240),
+      3px 2px 3px rgb(139, 171, 240);
+}
+/* posição e deslocamnto das animações */
+.imageFilm {
+    display: inline-flex;
+    margin: 10px;
+   
+    transform-style: preserve-3d;
+    transition: .8s;
+}
+/* rotacão dos cards das animações */
+.imageFilm:hover .cardImg{
+    transform:rotateX(-180deg);
+}
+.imageFilm:hover .cardBack{
+    transform: rotateX(0deg);
+}
+.cardImg, .cardBack {
+    color:black;
+    width: 217px;
+    height: 290px;
+    padding: 3%;
+    border-radius: 30px;
+    margin: 0px 10px 10px 0;
+    border: 1pt solid #f2f2f2;
+    transition: .8s;
+    backface-visibility:hidden;
+}
+.cardImg {
+    transform: rotateX(0deg);
+}
+.cardBack {
+    position: absolute;
+    background-color: #b1c5ed;
+    border: 1pt solid #f2f2f2;
+    transform: rotateX(180deg);
+}
+h2, .cardBack {
+    font-size: 18px;
+    text-align:center;
+}
+p, .cardBack {
+    font-size: 14px;
+    text-align:center;
+}
+.cardBack img {
+    height: 130px;
+    width: 140px;
+}
+.totoro img {
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    text-align: center;
+}
+@media (max-width: 768px) {
+    ul li a {
+        font-size: 16px;
+    }
+    nav img {
+        height: 70px;
+    }
+    nav {
+        height: 80px;
+    }
+    h1 {
+        font-size: 25px;
+        padding-top: 100px;
+    }
+    .selections select {
+        width: 150px;
+    }
+    .selections img {
+        width: 25px;
+        height: 25px;
+    }
+    .cardImg, .cardBack {
+        width: 200px;
+        height: 260px;
+        padding: 2,5%;
+    }
+ }
