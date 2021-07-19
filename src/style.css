@@ -7,18 +7,17 @@ html, body {
 }
 /* texto animação*/
 h1 {
-    padding-top: 150px;
+    padding-top: 140px;
     text-align: center;
 }
 /* tanho e local do filtro */
 .selections {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     height: 30px;
     position: relative;
-    bottom: 50px;
+    bottom: 10px;
 }
 .selections img {
     width: 30px;
@@ -48,6 +47,7 @@ nav {
     top: 0;
     overflow: hidden;
     background-color: #b1c5ed;
+    z-index: 1000;
 }
 /*posição do logo ghibli*/
 nav ul {
@@ -63,6 +63,7 @@ nav ul li {
 }
 /* tamanho e cor da barra */
 nav ul li a {
+    width: 100%;
     color: #f2f2f2;
     padding: 58px 30px;
     text-decoration: none;
@@ -75,9 +76,7 @@ nav ul li a:hover {
 /* posição e deslocamnto das animações */
 .imageFilm {
     display: inline-flex;
-    flex-wrap: wrap;
-    width:17%;
-    margin: 1%;
+    margin: 10px;
    
     transform-style: preserve-3d;
     transition: .8s;
@@ -130,3 +129,63 @@ p, .cardBack {
 footer {
     text-align: center;
 }
+@media (max-width: 768px) {
+    ul li a {
+        font-size: 16px;
+    }
+    nav img {
+        height: 70px;
+    }
+    nav {
+        height: 80px;
+    }
+    h1 {
+        font-size: 25px;
+        padding-top: 100px;
+    }
+    .selections select {
+        width: 150px;
+    }
+    .selections img {
+        width: 25px;
+        height: 25px;
+    }
+    .cardImg, .cardBack {
+        width: 200px;
+        height: 260px;
+        padding: 2,5%;
+    }
+ }
+/*icone de menu
+.barraMenu div {
+    width: 30px;
+    height: 5px;
+    margin: 5px 0;
+    background-color: #f2f2f2;
+}
+.barraMenu:hover div {
+    background-color: #97b4ee;
+    color: #f2f2f2;
+}
+.barraMenu {
+    display: none;
+    float: rigth;
+}
+@media (max-width: 700px) {
+    .barraMenu {
+        display: block;
+    }
+    .barra1, .barra2, .barra3 {
+        display: none;
+        width: 100%;
+        background: #b1c5ed;
+    }
+    #nav.active .barraNav {
+        display: block;
+    }
+    .barraNav  {
+        padding: 1rem 0;
+        margin: 0 1rem;
+
+    }
+}*/

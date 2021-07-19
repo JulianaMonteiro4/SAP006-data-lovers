@@ -9,12 +9,20 @@
   </head>
   <body>
     <!-- Barra de Navegação -->
-    <nav>
+    <nav id="nav">
       <ul>
+        <div class="barraNav" id="barraNav">
         <li><a href="//studioghibli.com.br/" target="_blank" ><img class="imageIcon" src="img/link-ghibli.png" alt="Studio Ghibli - link"></a></li>
-        <li><a href="home">Home</a></li>
-        <li><a href="./index.html">Animações</a></li>
-        <li><a href="personagens">Personagens</a></li>
+        <li><a class="barra1" href="home">Home</a></li>
+        <li><a class="barra2" href="./animacao.html">Animações</a></li>
+        <li><a class="barra3" href="personagens">Personagens</a></li>
+        </div>
+        <!--<li><div class="barraMenu">
+          <div></div>
+          <div></div>
+          <div></div>
+          </div>
+        </li>-->
       </ul>
     </nav>
     <header>
@@ -27,7 +35,7 @@
           <option value="sorter" selected>Ordenar</option>
           <option value="A-Z">A-Z</option>
           <option value="Z-A">Z-A</option>
-          <option value="release_date">Ano de Lançamento (crescente)</option>
+          <!--<option value="release_date">Ano de Lançamento (crescente)</option>-->
         </select>
       </div>
     <!-- caixa de  filtros -->
@@ -43,7 +51,7 @@
         <option value="director:Hiromasa Yonebayashi">Diretor: Hiromasa Yonebayashi</option>
         <option value="producer:Isao Takahata">Produtor: Isao Takahata</option>
         <option value="producer:Toru Hara">Produtor: Toru Hara</option>
-        <option valule="producer:Toshio Suzuki">Produtor:Toshio Suzuki</option>
+        <option value="producer:Toshio Suzuki">Produtor:Toshio Suzuki</option>
         <option value="producer:Yoshiaki Nishimura">Produtor: Yoshiaki Nishimura</option>
         <option value="producer:Hayao Miyazaki">Produtor: Hayao Miyazaki</option>
       </select>

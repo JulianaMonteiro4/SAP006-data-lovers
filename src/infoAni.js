@@ -6,7 +6,7 @@ let params = new URLSearchParams(window.location.search.substring(1));
 const movie = params.get("info");
 
 let film = films.find((anima) => anima.id === movie);
-function cardsInfo (films) {
+function cardsInfo () {
     document.getElementById("cardAbout").innerHTML = `
     <img src=${film.poster} class="cardImg" alt="Imagem da Animação">
     <div class="filmInfo">

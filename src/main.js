@@ -3,7 +3,8 @@ import { filterAni, orderAni } from "./data.js";
 
 // Primeiro filme apareça na tela
 const films = data.films;
-const orderChar = films[0].title ; 
+let ordefilt = films;
+//const orderChar = films[0].title ; 
 
 function infoAnimaTela (films) {
     document.getElementById("infoAnimacoes").innerHTML = films.map((film) => `
@@ -32,7 +33,7 @@ function filterInfo (f) {
     } else if ( value.includes("producer")) {
         infoAnimaTela(filterAni(films, "producer", nameOfRed[1]));
     } else if (value === "Filters") {
-        infoAnimaTela(films);
+        infoAnimaTela(ordefilt);
     }
 }
 document.getElementById("filter").addEventListener("change", filterInfo);
@@ -43,7 +44,17 @@ function orderInfo (o) {
     if (value === "sorter") {
         infoAnimaTela(films);
     } else {
-        infoAnimaTela(orderAni(films, value));
+        infoAnimaTela(orderAni(ordefilt, value));
     }
 }
 document.getElementById("order").addEventListener("change", orderInfo);
+ 
+// mostar menu
+/*const iconeMenu = document.getElementById("barraMenu");
+
+function showMenu () {
+    const barra = document.getElementById("nav");
+    barra.classList.toggle("active");
+}
+
+iconeMenu.addEventListener("click", showMenu);*/
