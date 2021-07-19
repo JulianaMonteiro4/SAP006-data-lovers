@@ -10,7 +10,7 @@ várias nomeações e prêmios. De todo esse fandom há um grupo que deseja
 interagir e ver as informações das animações e seus personagens.
 
 ## ACESSO
-[Projeto final - Site](link do deploy)
+[Projeto final - Site](https://marianamarcondes.github.io/SAP006-data-lovers/)
 
 # ÍNDICE
 [1. CONTRIBUIÇÕES](#1-contribuicoes)
