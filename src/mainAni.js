@@ -1,5 +1,5 @@
 import data from "./data/ghibli/ghibli.js"
-import { filterAni, orderAni } from "./data.js";
+import { filtered, orderAni } from "./data.js";
 
 // Primeiro filme apareça na tela
 const films = data.films;
@@ -29,9 +29,9 @@ function filterInfo (f) {
     const value = f.target.value;
     const nameOfRed = value.split(":");
     if ( value.includes("director")) {
-        infoAnimaTela(filterAni(films, "director", nameOfRed[1]));
+        infoAnimaTela(filtered(films, "director", nameOfRed[1]));
     } else if ( value.includes("producer")) {
-        infoAnimaTela(filterAni(films, "producer", nameOfRed[1]));
+        infoAnimaTela(filtered(films, "producer", nameOfRed[1]));
     } else if (value === "Filters") {
         infoAnimaTela(ordefilt);
     }
